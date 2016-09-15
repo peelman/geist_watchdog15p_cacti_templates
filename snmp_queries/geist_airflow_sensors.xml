@@ -1,0 +1,59 @@
+<airflow_sensors>
+	<name>Get Airflow Sensors</name>
+	<description>Queries a Geist Watchdog for a list of monitorable Airflow / Temp / Humidity Sensors</description>
+	<oid_index>.1.3.6.1.4.1.21239.5.1.5.1.1</oid_index>
+	<index_order_type>numeric</index_order_type>
+	<index_title_format>|chosen_order_field|</index_title_format>
+
+	<fields>
+		<airflowSensorIndex>
+			<name>Index</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>input</direction>
+			<oid>.1.3.6.1.4.1.21239.5.1.5.1.1</oid>
+		</airflowSensorIndex>
+		<airflowSensorSerial>
+			<name>Serial</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>input</direction>
+			<oid>.1.3.6.1.4.1.21239.5.1.5.1.2</oid>
+		</airflowSensorSerial>
+		<airflowSensorName>
+			<name>Name</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>input</direction>
+			<oid>.1.3.6.1.4.1.21239.5.1.5.1.3</oid>
+		</airflowSensorName>
+		<airflowSensorTemp>
+			<name>Temp</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>output</direction>
+			<oid>.1.3.6.1.4.1.21239.5.1.5.1.5</oid>
+		</airflowSensorTemp>
+		<airflowSensorFlow>
+			<name>Air Flow</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>output</direction>
+			<oid>.1.3.6.1.4.1.21239.5.1.5.1.6</oid>
+		</airflowSensorFlow>
+		<airflowSensorHumidity>
+			<name>Humidity</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>output</direction>
+			<oid>.1.3.6.1.4.1.21239.5.1.5.1.7</oid>
+		</airflowSensorHumidity>
+		<airflowSensorDewPoint>
+			<name>Dew Point</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>output</direction>
+			<oid>.1.3.6.1.4.1.21239.5.1.5.1.8</oid>
+		</airflowSensorDewPoint>
+	</fields>
+</airflow_sensors>

@@ -1,0 +1,80 @@
+<t3hd_sensors>
+	<name>Get t3hd Sensors</name>
+	<description>Queries a Geist Watchdog for a list of monitorable t3hd Sensors</description>
+	<oid_index>.1.3.6.1.4.1.21239.5.1.8.1.1</oid_index>
+	<index_order_type>numeric</index_order_type>
+	<index_title_format>|chosen_order_field|</index_title_format>
+
+	<fields>
+		<t3hdSensorIndex>
+			<name>Index</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>input</direction>
+			<oid>.1.3.6.1.4.1.21239.5.1.8.1.1</oid>
+		</t3hdSensorIndex>
+		<t3hdSensorSerial>
+			<name>Serial</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>input</direction>
+			<oid>.1.3.6.1.4.1.21239.5.1.8.1.2</oid>
+		</t3hdSensorSerial>
+		<t3hdSensorName>
+			<name>Name</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>input</direction>
+			<oid>.1.3.6.1.4.1.21239.5.1.8.1.3</oid>
+		</t3hdSensorName>
+		<t3hdSensorExtAName>
+			<name>Ext A. Name</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>input</direction>
+			<oid>.1.3.6.1.4.1.21239.5.1.8.1.10</oid>
+		</t3hdSensorExtAName>
+		<t3hdSensorExtBName>
+			<name>Ext B. Name</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>input</direction>
+			<oid>.1.3.6.1.4.1.21239.5.1.8.1.13</oid>
+		</t3hdSensorExtBName>
+		<t3hdSensorTemp>
+			<name>Temp</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>output</direction>
+			<oid>.1.3.6.1.4.1.21239.5.1.8.1.6</oid>
+		</t3hdSensorTemp>
+		<t3hdSensorHumidity>
+			<name>Humidity</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>output</direction>
+			<oid>.1.3.6.1.4.1.21239.5.1.8.1.7</oid>
+		</t3hdSensorHumidity>
+		<t3hdSensorDewPoint>
+			<name>Dew Point</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>output</direction>
+			<oid>.1.3.6.1.4.1.21239.5.1.8.1.8</oid>
+		</t3hdSensorDewPoint>
+		<t3hdSensorExtATemp>
+			<name>Ext. A Temp</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>output</direction>
+			<oid>.1.3.6.1.4.1.21239.5.1.8.1.11</oid>
+		</t3hdSensorExtATemp>
+		<t3hdSensorExtBTemp>
+			<name>Ext. B Temp</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>output</direction>
+			<oid>.1.3.6.1.4.1.21239.5.1.8.1.14</oid>
+		</t3hdSensorExtBTemp>
+	</fields>
+</t3hd_sensors>
